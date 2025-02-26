@@ -1,0 +1,608 @@
+fileFormatVersion: 2
+guid: 144c7e618cea28a4199565da5a3e66ad
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: 0
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: blocksheet-1.0_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 951
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61e9df4941074144195d0a979af9f4d7
+      internalID: 96393438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocksheet-1.0_1
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 951
+        width: 130
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f66ed1f5ef6363440b6cde1e8efae674
+      internalID: -747192803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocksheet-1.0_2
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 951
+        width: 258
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c307a920a7e25354d9d3c80bf8c6b796
+      internalID: 1919038728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocksheet-1.0_3
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 951
+        width: 386
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd4450c82d1214f4db5a2ad3a613805a
+      internalID: 463074074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocksheet-1.0_4
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 839
+        width: 97
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d708c614a5990d24894f472d30403964
+      internalID: -2123139280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocksheet-1.0_5
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 839
+        width: 194
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21a33cb130e82324393fce453462d7f7
+      internalID: 2086706253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocksheet-1.0_6
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 839
+        width: 258
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc22aadfcddc6904e819b894a5d08f3a
+      internalID: 1242363007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocksheet-1.0_7
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 839
+        width: 322
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29bbda4335f890b4685e0cf6bd408f40
+      internalID: -119641124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocksheet-1.0_8
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 695
+        width: 129
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f243ed13bb1fa0046acbe6bfc59ce8dc
+      internalID: 493107226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocksheet-1.0_9
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 695
+        width: 162
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17906ef602839db41afdf6ad96658970
+      internalID: -929467119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocksheet-1.0_10
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 695
+        width: 194
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bff2a649554b80646898c6677743883e
+      internalID: -628862237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocksheet-1.0_11
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 695
+        width: 274
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5236191d7b5b764f851277ef2f19963
+      internalID: 1779832645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocksheet-1.0_12
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 631
+        width: 193
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd710a0634accf9488fcd1de07da8510
+      internalID: -712795297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocksheet-1.0_13
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 520
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb3702a446683b44c8c272ff7f36d09e
+      internalID: 1063295680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocksheet-1.0_14
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 520
+        width: 178
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e01afa41c4a4a8a429d82611cfea4fec
+      internalID: 604008796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocksheet-1.0_15
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 520
+        width: 194
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fef0674c18a9845479eea720594a5e81
+      internalID: 1075236444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocksheet-1.0_16
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 520
+        width: 226
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f734dbae5d7d9240927ca29da20dae2
+      internalID: -1984395479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blocksheet-1.0_17
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 520
+        width: 162
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab95cae132593e8429b5c6bd81e1059b
+      internalID: -669463717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline:
+    - - {x: -504, y: 440}
+      - {x: -504, y: 504}
+      - {x: -440, y: 504}
+      - {x: -440, y: 440}
+    - - {x: -424, y: 441}
+      - {x: -424, y: 504}
+      - {x: -297, y: 503}
+      - {x: -296, y: 441}
+    - - {x: -504, y: 328}
+      - {x: -504, y: 424}
+      - {x: -408, y: 424}
+      - {x: -408, y: 328}
+    - - {x: -392, y: 328}
+      - {x: -392, y: 424}
+      - {x: -200, y: 424}
+      - {x: -200, y: 328}
+    - - {x: -504, y: 184}
+      - {x: -504, y: 312}
+      - {x: -376, y: 312}
+      - {x: -376, y: 184}
+    - - {x: -360, y: 184}
+      - {x: -360, y: 312}
+      - {x: -200, y: 312}
+      - {x: -200, y: 184}
+    - - {x: -184, y: 184}
+      - {x: -184, y: 312}
+      - {x: 8, y: 312}
+      - {x: 8, y: 184}
+    - - {x: -184, y: 328}
+      - {x: -184, y: 424}
+      - {x: 72, y: 424}
+      - {x: 72, y: 328}
+    - - {x: 88, y: 328}
+      - {x: 88, y: 424}
+      - {x: 408, y: 424}
+      - {x: 408, y: 328}
+    - - {x: -8, y: 440}
+      - {x: -8, y: 504}
+      - {x: 376, y: 504}
+      - {x: 376, y: 440}
+    - - {x: -280, y: 440}
+      - {x: -280, y: 504}
+      - {x: -24, y: 504}
+      - {x: -24, y: 440}
+    - - {x: 312, y: 120}
+      - {x: 312, y: 312}
+      - {x: 504, y: 312}
+      - {x: 504, y: 120}
+    - - {x: 24, y: 184}
+      - {x: 24, y: 312}
+      - {x: 296, y: 312}
+      - {x: 296, y: 184}
+    - - {x: 312, y: 8}
+      - {x: 312, y: 104}
+      - {x: 472, y: 104}
+      - {x: 472, y: 8}
+    - - {x: 72, y: 8}
+      - {x: 72, y: 168}
+      - {x: 296, y: 167}
+      - {x: 296, y: 8}
+    - - {x: -136, y: 8}
+      - {x: -136, y: 168}
+      - {x: 56, y: 168}
+      - {x: 56, y: 8}
+    - - {x: -328, y: 8}
+      - {x: -328, y: 168}
+      - {x: -152, y: 168}
+      - {x: -152, y: 8}
+    - - {x: -504, y: 8}
+      - {x: -504, y: 168}
+      - {x: -344, y: 168}
+      - {x: -344, y: 8}
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      blocksheet-1.0_0: 96393438
+      blocksheet-1.0_1: -747192803
+      blocksheet-1.0_10: -628862237
+      blocksheet-1.0_11: 1779832645
+      blocksheet-1.0_12: -712795297
+      blocksheet-1.0_13: 1063295680
+      blocksheet-1.0_14: 604008796
+      blocksheet-1.0_15: 1075236444
+      blocksheet-1.0_16: -1984395479
+      blocksheet-1.0_17: -669463717
+      blocksheet-1.0_2: 1919038728
+      blocksheet-1.0_3: 463074074
+      blocksheet-1.0_4: -2123139280
+      blocksheet-1.0_5: 2086706253
+      blocksheet-1.0_6: 1242363007
+      blocksheet-1.0_7: -119641124
+      blocksheet-1.0_8: 493107226
+      blocksheet-1.0_9: -929467119
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
