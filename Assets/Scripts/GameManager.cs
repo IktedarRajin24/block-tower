@@ -45,6 +45,7 @@ public class GameManager : MonoBehaviour
 
             if (Input.GetMouseButtonDown(0))
             {
+                currentBlock.SetParent(null);
                 currentBlock = null;
                 currentRB.simulated = true;
                 StartCoroutine(DelayedSpawner());

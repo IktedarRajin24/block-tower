@@ -5,13 +5,24 @@ public class AreaDetector : MonoBehaviour
 {
     private bool isInCollider = false;
     [SerializeField] private Transform blockHolder;
-    public float targetHeight = 0.8f;
+    [SerializeField] private Transform ground;
     public float speed = 2f;
+
+    private float previousHeight = 0f;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        isInCollider = true;
-        StartCoroutine(UpdatePositionAfterDelay());
+        float colliderTopY = other.bounds.max.y; // Get collider's top Y in world space
+        float currentAreaY = transform.position.y;
+
+        // Check if the collider's top is higher than the current area position
+        if (colliderTopY > currentAreaY)
+        {
+            isInCollider = true;
+            float moveDistance = colliderTopY - currentAreaY;
+            StartCoroutine(UpdatePositionAfterDelay(moveDistance));
+            previousHeight = colliderTopY; // Update previous height
+        }
     }
 
     private void OnTriggerExit2D(Collider2D other)
@@ -19,20 +30,20 @@ public class AreaDetector : MonoBehaviour
         isInCollider = false;
     }
 
-    private IEnumerator UpdatePositionAfterDelay()
+    private IEnumerator UpdatePositionAfterDelay(float moveDistance)
     {
-        yield return new WaitForSeconds(1.5f); // Delay before movement starts
+        yield return new WaitForSeconds(1.5f); // Delay before moving
 
         if (isInCollider)
         {
             float elapsedTime = 0f;
-            float duration = 1.5f; // Adjust duration for smooth movement
+            float duration = 1.5f;
 
             Vector3 startBlockPos = blockHolder.position;
-            Vector3 targetBlockPos = startBlockPos + new Vector3(0, targetHeight, 0);
+            Vector3 targetBlockPos = startBlockPos + new Vector3(0, moveDistance, 0);
 
             Vector3 startObjectPos = transform.position;
-            Vector3 targetObjectPos = startObjectPos + new Vector3(0, 0.2f, 0);
+            Vector3 targetObjectPos = startObjectPos + new Vector3(0, moveDistance, 0);
 
             while (elapsedTime < duration)
             {
@@ -44,7 +55,6 @@ public class AreaDetector : MonoBehaviour
                 yield return null;
             }
 
-            // Ensure exact final positions
             blockHolder.position = targetBlockPos;
             transform.position = targetObjectPos;
         }

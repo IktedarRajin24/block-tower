@@ -6,8 +6,8 @@ public class CameraController : MonoBehaviour
     public float followSpeed = 2f;  // Speed of following
     public float deathZoneY = 10f;  // The Y position where zooming starts
     public float zoomSpeed = 2f;  // Speed of zooming out
-    public float maxZoomOut = 10f;  // Maximum zoom-out size
-    public float minZoom = 5f;  // Minimum zoom level
+    public float maxZoomOut = 3f;  // Maximum zoom-out size
+    public float minZoom = 1f;  // Minimum zoom level
 
     private Camera cam;
     private bool shouldZoomOut = false;
