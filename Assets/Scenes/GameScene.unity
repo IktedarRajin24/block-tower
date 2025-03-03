@@ -396,7 +396,6 @@ GameObject:
   m_Component:
   - component: {fileID: 405710777}
   - component: {fileID: 405710776}
-  - component: {fileID: 405710779}
   - component: {fileID: 405710780}
   m_Layer: 6
   m_Name: Base
@@ -472,18 +471,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &405710779
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 405710775}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cad712bec2f43234cb90d75835e299a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &405710780
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -635,7 +622,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1414741098}
-  followSpeed: 3.5
+  followSpeed: 2
   deathZoneY: -4
   zoomSpeed: 2
   maxZoomOut: 6
@@ -1021,6 +1008,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 57213470}
+  splashAudio: {fileID: 0}
+  gameOverDelay: 2
 --- !u!212 &1526087103
 SpriteRenderer:
   m_ObjectHideFlags: 0
