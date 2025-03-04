@@ -4,12 +4,15 @@ public class BlockFallIndicator : MonoBehaviour
 {
     [SerializeField] public GameManager gameManager;
     [SerializeField] public AudioSource dropAudio;
-
+    [SerializeField] public ParticleSystem splashParticle;
+    public LineRenderer lineRenderer;
     private bool hasFallen = false;
     private void Start()
     {
         gameManager = FindObjectOfType<GameManager>();
         dropAudio = GetComponent<AudioSource>();
+        lineRenderer = GetComponentInChildren<LineRenderer>();
+        splashParticle = GetComponent<ParticleSystem>();
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -18,6 +21,11 @@ public class BlockFallIndicator : MonoBehaviour
             gameManager.IncreaseScore();
             hasFallen = true;
             dropAudio.Play();
+            lineRenderer.enabled = false;
+        }
+        if(collision.gameObject.tag == "Water")
+        {
+            splashParticle.Play();
         }
     }
 }

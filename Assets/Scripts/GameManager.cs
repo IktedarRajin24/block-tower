@@ -63,7 +63,7 @@ public class GameManager : MonoBehaviour
         if (blocks.Length == 0) return;
 
         int randomIndex = Random.Range(0, blocks.Length);
-        currentBlock = Instantiate(blocks[randomIndex], blockHolder);
+        currentBlock = Instantiate(blocks[randomIndex]);
         currentBlock.position = blockHolder.position;
         currentRB = currentBlock.GetComponent<Rigidbody2D>();
         currentBlock.GetComponent<BlockFallIndicator>().gameManager = this;

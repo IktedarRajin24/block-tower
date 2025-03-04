@@ -40,7 +40,7 @@ public class AreaDetector : MonoBehaviour
             float duration = 1.5f;
 
             Vector3 startBlockPos = blockHolder.position;
-            Vector3 targetBlockPos = startBlockPos + new Vector3(0, moveDistance, 0);
+            Vector3 targetBlockPos = startBlockPos + new Vector3(0, 1.0f, 0);
 
             Vector3 startObjectPos = transform.position;
             Vector3 targetObjectPos = startObjectPos + new Vector3(0, moveDistance, 0);

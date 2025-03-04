@@ -4,7 +4,7 @@ public class BlockToViewportLine : MonoBehaviour
 {
     public Camera mainCamera;
     public float lineWidthMultiplier = 1f;
-    public float opacity = 0.5f; // Opacity value (0.0 to 1.0)
+    public float opacity = 0.2f; // Set opacity to 0.2
     private LineRenderer lineRenderer;
 
     void Start()
@@ -27,7 +27,12 @@ public class BlockToViewportLine : MonoBehaviour
 
         lineRenderer.positionCount = 2;
 
-        // Set initial opacity
+        // Assign a material that supports transparency
+        if (lineRenderer.material == null)
+        {
+            lineRenderer.material = new Material(Shader.Find("Sprites/Default"));
+        }
+
         UpdateLineColor();
     }
 
@@ -41,12 +46,12 @@ public class BlockToViewportLine : MonoBehaviour
         blockBottom.z = transform.position.z;
 
         // Get the viewport bottom center (Y-axis)
-        Vector3 viewportBottom = new Vector3(0.5f, 0f, mainCamera.nearClipPlane + 1f); // Change 1f to 0f
+        Vector3 viewportBottom = new Vector3(0.5f, 0f, mainCamera.nearClipPlane + 1f);
         Vector3 worldBottom = mainCamera.ViewportToWorldPoint(viewportBottom);
 
         // Set the line renderer positions
         lineRenderer.SetPosition(0, blockBottom);
-        lineRenderer.SetPosition(1, new Vector3(transform.position.x, worldBottom.y, transform.position.z)); // use world bottom
+        lineRenderer.SetPosition(1, new Vector3(transform.position.x, worldBottom.y, transform.position.z));
 
         // Dynamically set line width based on block's scale
         float blockWidth = GetComponentInParent<SpriteRenderer>().bounds.size.x;
@@ -60,9 +65,8 @@ public class BlockToViewportLine : MonoBehaviour
 
     void UpdateLineColor()
     {
-        Debug.Log(lineRenderer.material.color);
-        Color color = lineRenderer.material.color;
-        color.a = opacity;
-        lineRenderer.material.color = color;
+        Color lineColor = new Color(1f, 1f, 1f, opacity); // White color with 0.2 opacity
+        lineRenderer.startColor = lineColor;
+        lineRenderer.endColor = lineColor;
     }
 }

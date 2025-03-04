@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Block
   - Base
+  - Water
   layers:
   - Default
   - TransparentFX
