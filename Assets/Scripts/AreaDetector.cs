@@ -7,6 +7,7 @@ public class AreaDetector : MonoBehaviour
     [SerializeField] private Transform blockHolder;
     [SerializeField] private Transform ground;
     public float speed = 2f;
+    public float maxBlockHeight = 6.0f; // Maximum Y position for blockHolder
 
     private float previousHeight = 0f;
 
@@ -41,6 +42,12 @@ public class AreaDetector : MonoBehaviour
 
             Vector3 startBlockPos = blockHolder.position;
             Vector3 targetBlockPos = startBlockPos + new Vector3(0, 1.0f, 0);
+
+            // Ensure blockHolder doesn't go above maxBlockHeight
+            if (targetBlockPos.y > maxBlockHeight)
+            {
+                targetBlockPos.y = maxBlockHeight;
+            }
 
             Vector3 startObjectPos = transform.position;
             Vector3 targetObjectPos = startObjectPos + new Vector3(0, moveDistance, 0);

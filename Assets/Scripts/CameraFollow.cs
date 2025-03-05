@@ -8,6 +8,7 @@ public class CameraController : MonoBehaviour
     public float zoomSpeed = 2f;  // Speed of zooming out
     public float maxZoomOut = 3f;  // Maximum zoom-out size
     public float minZoom = 1f;  // Minimum zoom level
+    public float maxCameraHeight = 10f; // Limit for the camera's height
 
     private Camera cam;
     private bool shouldZoomOut = false;
@@ -17,13 +18,13 @@ public class CameraController : MonoBehaviour
         cam = Camera.main;
     }
 
-    void LateUpdate()
+    void Update()
     {
         float halfHeight = cam.orthographicSize;  // Half of camera height
         float cameraBottomY = transform.position.y - halfHeight;  // Camera's bottom position
 
-        // Camera follows the target until the bottom of the camera reaches the death zone
-        if (cameraBottomY < deathZoneY)
+        // Camera follows the target until zooming starts, but doesn't go above maxCameraHeight
+        if (cameraBottomY < deathZoneY && transform.position.y < maxCameraHeight)
         {
             Vector3 targetPosition = new Vector3(transform.position.x, target.position.y, transform.position.z);
             transform.position = Vector3.Lerp(transform.position, targetPosition, followSpeed * Time.deltaTime);
